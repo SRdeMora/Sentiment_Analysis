@@ -1,0 +1,37 @@
+,Label,Entity,Review,Continent,Sentiment
+0,GENERAL,Gladiator 2,"""Gladiator 2"" es una secuela que",EEUU,POS
+2,GENERAL,secuela,esperaba mucho de esta secuela.,EEUU,NEG
+3,GENERAL,Gladiator 2,"""Gladiator 2"" no está a la altura de su legado.",EUROPE,NEG
+4,GENERAL,Gladiator 2,"""Gladiator 2"" logra mantener el espíritu de la primera película con escenas de batalla bien coreografiadas y una banda sonora poderosa.",EUROPE,POS
+5,GENERAL,secuela,Se siente como una secuela innecesaria.,EEUU,NEG
+6,GENERAL,Gladiator 2,"Gladiator 2"" cumple con ofrecer acción y drama",EEUU,NEU
+7,GENERAL,secuela,tampoco es una secuela memorable.,EEUU,POS
+8,GENERAL,Gladiator 2,"Me sorprendió gratamente ""Gladiator 2"".",EEUU,NEU
+9,GENERAL,Gladiator 2,"la historia de ""Gladiator 2"" no logra cautivar de la misma manera que la primera.",EEUU,NEG
+10,GENERAL,Gladiator 2,"""Gladiator 2"" nos devuelve a la Roma imperial con una producción impecable y un elenco estelar.",EUROPE,POS
+11,GENERAL,Gladiator 2,"Si bien ""Gladiator 2"" es visualmente impresionante",EUROPE,POS
+12,GENERAL,Gladiator 2,"""Gladiator 2"" no logra capturar el espíritu de la original.",EEUU,NEG
+13,GENERAL,Gladiator 2,"""Gladiator 2"" mantiene al espectador al borde de su asiento.",EUROPE,POS
+14,GENERAL,Gladiator 2,"""Gladiator 2"" logra transportar al espectador de vuelta al mundo de la Roma imperial con gran maestría.",EUROPE,POS
+15,GENERAL,secuela,es una secuela digna con un diseño de producción impecable y actuaciones destacadas.,EUROPE,POS
+16,GENERAL,secuela,Es una secuela entretenida,EUROPE,POS
+17,GENERAL,secuela,Una secuela que sorprende gratamente.,EUROPE,POS
+18,GENERAL,Gladiator 2,"""Gladiator 2"" es una experiencia cinematográfica que vale la pena disfrutar.",EUROPE,POS
+19,GENERAL,Gladiator 2,"""Gladiator 2"" entrega actuaciones convincentes y momentos memorables.",EUROPE,POS
+20,GENERAL,Gladiator 2,"""Gladiator 2"" es entretenida pero le falta profundidad.",EUROPE,NEU
+21,GENERAL,secuela,El guion carece de originalidad y la historia parece más un intento de nostalgia que una secuela necesaria.,EUROPE,NEG
+22,GENERAL,Gladiator 2,"""Gladiator 2"" logra un equilibrio entre la acción espectacular y una narrativa bien ejecutada.",EUROPE,POS
+23,GENERAL,secuela,Una secuela que no era necesaria.,EEUU,NEU
+24,GENERAL,Gladiator 2,"""Gladiator 2"" se sostiene como una película sólida y emocionante.",EEUU,POS
+25,GENERAL,Gladiator 2,"Gladiator 2"" me sorprendió con su narrativa cautivadora y escenas épicas.",EEUU,NEU
+26,GENERAL,secuela,Una secuela que vale la pena.,EEUU,POS
+27,GENERAL,Gladiator 2,"""Gladiator 2"" es visualmente impresionante",EUROPE,POS
+28,GENERAL,Gladiator 2,"""Gladiator 2"" es una experiencia emocionante que logra mantener el espíritu de la primera película.",EUROPE,POS
+29,GENERAL,Gladiator 2,"Gladiator 2"" ofrece acción emocionante y actuaciones sólidas.",EUROPE,POS
+30,GENERAL,secuela,es una secuela digna que merece ser vista.,EUROPE,POS
+31,GENERAL,Gladiator 2,"""Gladiator 2"" no logra capturar la esencia de la primera.",EEUU,POS
+32,GENERAL,secuela,Una secuela que sorprende.,EEUU,POS
+33,GENERAL,Gladiator 2,"""Gladiator 2"" ofrece una experiencia emocionante con actuaciones destacadas y una dirección impecable.",EEUU,POS
+34,GENERAL,Gladiator 2,"Gladiator 2"" es una obra épica que ofrece acción",EUROPE,POS
+35,GENERAL,Gladiator 2,"""Gladiator 2"" no está a la altura de su predecesora.",EEUU,NEG
+36,GENERAL,secuela,Una secuela digna que captura parte de la magia de la original.,EUROPE,POS

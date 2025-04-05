@@ -1,0 +1,37 @@
+,Label,Entity,Review,Continent,Sentiment
+0,GUION,trama,la trama se siente un poco forzada.,EEUU,NEG
+1,GUION,guion,pero el guion no tiene el mismo impacto emocional que la primera película.,EEUU,NEU
+2,GUION,guion,el guion carece de profundidad y los personajes no generan la misma empatía que en la primera entrega.,EUROPE,NEG
+3,GUION,historia,Aunque la historia no logra el mismo impacto emocional que su predecesora,EEUU,NEU
+4,GUION,narrativa,la falta de un personaje tan icónico como Máximo resta un poco de fuerza a la narrativa.,EUROPE,NEG
+5,GUION,guion,el guion es predecible y poco inspirado.,EEUU,NEG
+6,GUION,historia,pero carece de una historia realmente atrapante.,EEUU,NEG
+7,GUION,guion,pero no logra salvar del todo el guion.,EEUU,NEG
+8,GUION,historia,Las batallas son emocionantes y la historia,EEUU,NEU
+9,GUION,historia,"la historia de ""Gladiator 2"" no logra cautivar de la misma manera que la primera.",EEUU,NEG
+10,GUION,historia,Un intento fallido de revivir una historia que ya tenía un cierre perfecto.,EUROPE,NEG
+11,GUION,guion,el guion es flojo y los nuevos personajes no generan el mismo impacto que en la original.,EUROPE,NEG
+12,GUION,guion,A pesar de algunos altibajos en el guion,EUROPE,NEG
+13,GUION,historia,la historia no logra enganchar de la misma manera que la primera.,EUROPE,NEG
+14,GUION,narrativa,pero no logran salvar una narrativa que se siente floja y predecible.,EUROPE,NEU
+15,GUION,trama,aunque la trama no alcanza el mismo nivel de profundidad emocional que su predecesora.,EEUU,NEU
+16,GUION,guion,pero el guion deja mucho que desear.,EEUU,NEU
+17,GUION,guion,el guion no tiene la fuerza suficiente para sostener la narrativa.,EUROPE,NEG
+19,GUION,historia,Denzel Washington y Pedro Pascal añaden profundidad a la historia,EUROPE,NEG
+20,GUION,trama,la trama no logra sostener el interés de principio a fin.,EUROPE,NEG
+21,GUION,narrativa,y la narrativa,EUROPE,NEG
+22,GUION,guion,pero el guion es predecible y carece de emoción.,EEUU,NEG
+23,GUION,guion,El guion carece de originalidad y la historia parece más un intento de nostalgia que una secuela necesaria.,EUROPE,NEG
+25,GUION,narrativa,no logran salvar una narrativa que se siente vacía y predecible.,EUROPE,NEG
+26,GUION,narrativa,"""Gladiator 2"" logra un equilibrio entre la acción espectacular y una narrativa bien ejecutada.",EUROPE,POS
+27,GUION,guion,pero el guion no termina de convencer.,EUROPE,NEU
+28,GUION,guion,El guion es flojo y los personajes no son tan interesantes.,EEUU,NEG
+29,GUION,guion,pero el guion no logra capturar la magia de la original.,EUROPE,NEU
+30,GUION,narrativa,"Gladiator 2"" me sorprendió con su narrativa cautivadora y escenas épicas.",EEUU,NEU
+31,GUION,historia,pero la historia no tiene la misma fuerza que la primera.,EUROPE,NEU
+32,GUION,guion,el guion es predecible y los personajes no logran generar empatía.,EUROPE,NEG
+33,GUION,trama,Aunque la trama tiene algunos altibajos,EUROPE,NEU
+34,GUION,guion,pero el guion no logra sostener la narrativa.,EUROPE,NEU
+36,GUION,historia,pero la historia carece de profundidad.,EEUU,NEU
+37,GUION,historia,pero la historia no logra capturar el corazón del espectador como lo hizo la original.,EEUU,NEG
+38,GUION,trama,la trama carece de profundidad y los personajes no generan empatía.,EEUU,NEG
