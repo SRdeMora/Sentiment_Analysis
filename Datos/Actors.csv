@@ -1,0 +1,41 @@
+,Label,Entity,Review,Continent,Sentiment
+0,ACTOR,Paul Mescal,Paul Mescal ofrece una actuación convincente,EEUU,POS
+1,ACTOR,Denzel Washington,Denzel Washington destaca con su presencia imponente,EUROPE,POS
+2,ACTOR,Pedro Pascal,Pedro Pascal brilla con su interpretación,EEUU,POS
+3,ACTOR,Paul Mescal,Paul Mescal hace un gran trabajo,EUROPE,POS
+4,ACTOR,Denzel Washington,Denzel Washington entrega una actuación sólida,EEUU,POS
+5,ACTOR,Pedro Pascal,Pedro Pascal es un gran acierto en el reparto,EEUU,POS
+6,ACTOR,Paul Mescal,Paul Mescal demuestra ser un protagonista fuerte,EEUU,POS
+7,ACTOR,Denzel Washington,Denzel Washington y Pedro Pascal hacen un buen trabajo,EEUU,POS
+8,ACTOR,Pedro Pascal,Denzel Washington y Pedro Pascal hacen un buen trabajo,EEUU,POS
+9,ACTOR,Paul Mescal,A pesar de contar con actores talentosos como Paul Mescal y Denzel Washington,EUROPE,NEG
+10,ACTOR,Denzel Washington,A pesar de contar con actores talentosos como Paul Mescal y Denzel Washington,EUROPE,NEG
+11,ACTOR,Paul Mescal,Paul Mescal logra una actuación convincente,EUROPE,POS
+12,ACTOR,Denzel Washington,Denzel Washington aporta profundidad a su personaje y Pedro Pascal es un villano que roba cada escena en la que aparece.,EUROPE,POS
+13,ACTOR,Pedro Pascal,Denzel Washington aporta profundidad a su personaje y Pedro Pascal es un villano que roba cada escena en la que aparece.,EUROPE,POS
+14,ACTOR,Paul Mescal,Paul Mescal hace un buen trabajo,EUROPE,POS
+15,ACTOR,Pedro Pascal,Pedro Pascal y Denzel Washington brillan en sus papeles,EUROPE,POS
+16,ACTOR,Denzel Washington,Pedro Pascal y Denzel Washington brillan en sus papeles,EUROPE,POS
+17,ACTOR,Paul Mescal,Paul Mescal y Pedro Pascal ofrecen actuaciones sobresalientes,EEUU,POS
+18,ACTOR,Pedro Pascal,Paul Mescal y Pedro Pascal ofrecen actuaciones sobresalientes,EEUU,POS
+19,ACTOR,Paul Mescal,y el elenco liderado por Paul Mescal está a la altura del desafío.,EUROPE,POS
+20,ACTOR,Paul Mescal,Paul Mescal lo intenta,EUROPE,NEG
+21,ACTOR,Denzel Washington,Denzel Washington y Pedro Pascal añaden profundidad a la historia,EUROPE,NEG
+22,ACTOR,Pedro Pascal,Denzel Washington y Pedro Pascal añaden profundidad a la historia,EUROPE,NEG
+23,ACTOR,Paul Mescal,Paul Mescal hace un buen trabajo,EUROPE,POS
+24,ACTOR,Pedro Pascal,Pedro Pascal destaca con una actuación carismática que roba la pantalla.,EUROPE,POS
+25,ACTOR,Paul Mescal,Paul Mescal brilla en un papel desafiante y Pedro Pascal ofrece un villano con carisma innegable.,EUROPE,POS
+26,ACTOR,Pedro Pascal,Paul Mescal brilla en un papel desafiante y Pedro Pascal ofrece un villano con carisma innegable.,EUROPE,POS
+27,ACTOR,Pedro Pascal,Pedro Pascal y Denzel Washington hacen un buen trabajo,EUROPE,POS
+28,ACTOR,Denzel Washington,Pedro Pascal y Denzel Washington hacen un buen trabajo,EUROPE,POS
+29,ACTOR,Paul Mescal,La actuación de Paul Mescal es conmovedora,EUROPE,POS
+30,ACTOR,Pedro Pascal,especialmente la de Pedro Pascal,EUROPE,POS
+31,ACTOR,Paul Mescal,Paul Mescal lo intenta,EEUU,NEG
+32,ACTOR,Paul Mescal,Paul Mescal y Pedro Pascal brillan en sus respectivos papeles.,EEUU,POS
+33,ACTOR,Pedro Pascal,Paul Mescal y Pedro Pascal brillan en sus respectivos papeles.,EEUU,POS
+34,ACTOR,Pedro Pascal,Pedro Pascal es una gran adición al elenco,EUROPE,POS
+35,ACTOR,Paul Mescal,Paul Mescal entrega una actuación apasionante,EEUU,POS
+36,ACTOR,Paul Mescal,especialmente las de Paul Mescal y Pedro Pascal.,EUROPE,POS
+37,ACTOR,Pedro Pascal,especialmente las de Paul Mescal y Pedro Pascal.,EUROPE,POS
+38,ACTOR,Paul Mescal,Paul Mescal y Pedro Pascal están excepcionales en sus papeles.,EUROPE,POS
+39,ACTOR,Pedro Pascal,Paul Mescal y Pedro Pascal están excepcionales en sus papeles.,EUROPE,POS

@@ -1,0 +1,28 @@
+,Label,Entity,Review,Continent,Sentiment
+0,PRODUCCION,escenas,Las escenas de batalla son impresionantes,EEUU,NEU
+1,PRODUCCION,visual,sigue siendo un gran espectáculo visual y un digno sucesor del clásico.,EEUU,POS
+2,PRODUCCION,producción,Si bien la producción es impecable,EUROPE,POS
+3,PRODUCCION,escenas,"""Gladiator 2"" logra mantener el espíritu de la primera película con escenas de batalla bien coreografiadas y una banda sonora poderosa.",EUROPE,POS
+4,PRODUCCION,escenas,Aunque la cinematografía es espectacular y las escenas de acción están bien logradas,EEUU,NEU
+5,PRODUCCION,visual,logra construir su propia identidad y ofrece un espectáculo visual impresionante.,EEUU,POS
+6,PRODUCCION,escenas,Aunque tiene buenas escenas de acción y una banda sonora impresionante,EEUU,NEU
+7,PRODUCCION,producción,"""Gladiator 2"" nos devuelve a la Roma imperial con una producción impecable y un elenco estelar.",EUROPE,POS
+8,PRODUCCION,producción,Las secuencias de acción son emocionantes y el diseño de producción es exquisito.,EEUU,POS
+9,PRODUCCION,visual,es un deleite visual y una experiencia épica.,EEUU,POS
+10,PRODUCCION,producción,Se nota el esfuerzo en la dirección y producción,EEUU,NEG
+11,PRODUCCION,música,La música y la cinematografía son simplemente impresionantes.,EUROPE,POS
+12,PRODUCCION,escenas,Aunque las escenas de acción son impresionantes,EUROPE,NEU
+13,PRODUCCION,producción,es una secuela digna con un diseño de producción impecable y actuaciones destacadas.,EUROPE,POS
+14,PRODUCCION,escenas,Aunque las escenas de acción y la banda sonora son impresionantes,EUROPE,NEU
+15,PRODUCCION,escenas,Las escenas de acción están magistralmente coreografiadas,EUROPE,NEG
+16,PRODUCCION,Ridley Scott,Ridley Scott nos transporta de nuevo a un mundo épico,EUROPE,POS
+17,PRODUCCION,producción,Las batallas son espectaculares y el diseño de producción es impecable.,EUROPE,POS
+18,PRODUCCION,escenas,Las escenas de acción y la banda sonora son impresionantes,EUROPE,POS
+19,PRODUCCION,música,y la música de Hans Zimmer sigue siendo el alma de la película.,EUROPE,NEG
+20,PRODUCCION,escenas,Las escenas de acción son memorables,EEUU,NEG
+21,PRODUCCION,escenas,Hay escenas impresionantes y actuaciones decentes,EUROPE,POS
+22,PRODUCCION,escenas,"Gladiator 2"" me sorprendió con su narrativa cautivadora y escenas épicas.",EEUU,NEU
+23,PRODUCCION,música,y la música es simplemente espectacular.,EEUU,POS
+25,PRODUCCION,visual,"Un espectáculo visual que cumple con las expectativas. """,EUROPE,POS
+26,PRODUCCION,escenas,Las escenas de acción y la música son impresionantes,EEUU,POS
+28,PRODUCCION,escenas,Las actuaciones son sólidas y las escenas de acción son espectaculares.,EUROPE,POS
