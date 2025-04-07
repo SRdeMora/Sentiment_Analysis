@@ -26,7 +26,7 @@ Los datos obtenidos se han procesado para eliminar el ruido. Se han eliminado co
 
 
 
->[!IMPORTANT]
+>[!NOTE]
 ## 3.2 Definición de diccionario
 
 Recursos definidos:
