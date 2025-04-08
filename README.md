@@ -14,7 +14,7 @@ Del conjunto de reseñas se extraerán las entidades relevantes que se clasifica
 
 ## 2. Corpus
 
-El corpus de análisis se ha obtenido de forma sintética mediante prompt engineering, debido a que las API´s de las plataformas que facilitan las reseñas sobre películas, como IMDB, FilmAffinity o  Rotten Tomatoes,  son de pago y tampoco permiten el web scraping.
+El corpus de análisis se ha obtenido de forma sintética mediante prompt engineering, debido a que las API´s de las plataformas que facilitan las reseñas sobre películas, como _IMDB, _FilmAffinity o  _Rotten Tomatoes,  son de pago y tampoco permiten el web scraping.
 Prompt: “Actúa como un crítico especialista en cine. Accede a la página IMDB y analiza las reseñas asociadas a la película Gladiator II. Ahora ofréceme, en formato tabla, 40 reseñas inventadas por ti que reflejen de manera fiel el sentimiento de las reseñas analizadas.”
 En el corpus de análisis se ha añadido una columna llamada “Continent” que contiene las etiquetas de EEUU y EUROPA para evaluar las valoraciones de cada uno de los aspectos analizados en estos lugares.
 Esta misma técnica se ha utilizado para la creación del corpus de entrenamiento, sin embargo, se le ha pedido que analice diferentes películas entre las que se han incluido algunas con contenido histórico como Troya o Centurión, puesto que el análisis de películas históricas y épicas puede variar en relación a  películas de tipo contemporáneo. Además, se le ha pedido que asocie un sentimiento positivo(POS), negativo(NEG) y neutro(NEU) a cada una de las reseñas, para disponer de manera rápida de un número elevado de reseñas etiquetadas para el entrenamiento del modelo.
