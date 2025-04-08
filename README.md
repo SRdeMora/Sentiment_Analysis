@@ -1,7 +1,7 @@
 # Sentiment_Analysis
 
 ## 1. Descripción del escenario del proyecto
-El proyecto consiste en un análisis de datos, especializado en el sector audiovisual, de la película Gladiator 2. Para la realización del análisis se ha desarrollado  un  sistema de extracción de información y análisis de sentimientos de reseñas sobre la película.
+El proyecto consiste en un análisis de datos, especializado en el sector audiovisual, de la película *Gladiator 2*. Para la realización del análisis se ha desarrollado  un  sistema de extracción de información y análisis de sentimientos de reseñas sobre la película.
 El objetivo es identificar las opiniones del público en relación con los siguientes aspectos:
 
 - Opinión general sobre la película
@@ -14,15 +14,15 @@ Del conjunto de reseñas se extraerán las entidades relevantes que se clasifica
 
 ## 2. Corpus
 
-El corpus de análisis se ha obtenido de forma sintética mediante prompt engineering, debido a que las API´s de las plataformas que facilitan las reseñas sobre películas, como _IMDB, _FilmAffinity o  _Rotten Tomatoes,  son de pago y tampoco permiten el web scraping.
+El corpus de análisis se ha obtenido de forma sintética mediante prompt engineering, debido a que las API´s de las plataformas que facilitan las reseñas sobre películas, como *IMDB*, *FilmAffinity* o  *Rotten Tomatoes*,  son de pago y tampoco permiten el web scraping.
 Prompt: “Actúa como un crítico especialista en cine. Accede a la página IMDB y analiza las reseñas asociadas a la película Gladiator II. Ahora ofréceme, en formato tabla, 40 reseñas inventadas por ti que reflejen de manera fiel el sentimiento de las reseñas analizadas.”
 En el corpus de análisis se ha añadido una columna llamada “Continent” que contiene las etiquetas de EEUU y EUROPA para evaluar las valoraciones de cada uno de los aspectos analizados en estos lugares.
-Esta misma técnica se ha utilizado para la creación del corpus de entrenamiento, sin embargo, se le ha pedido que analice diferentes películas entre las que se han incluido algunas con contenido histórico como Troya o Centurión, puesto que el análisis de películas históricas y épicas puede variar en relación a  películas de tipo contemporáneo. Además, se le ha pedido que asocie un sentimiento positivo(POS), negativo(NEG) y neutro(NEU) a cada una de las reseñas, para disponer de manera rápida de un número elevado de reseñas etiquetadas para el entrenamiento del modelo.
+Esta misma técnica se ha utilizado para la creación del corpus de entrenamiento, sin embargo, se le ha pedido que analice diferentes películas entre las que se han incluido algunas con contenido histórico como *Troya* o *Centurión*, puesto que el análisis de películas históricas y épicas puede variar en relación a  películas de tipo contemporáneo. Además, se le ha pedido que asocie un sentimiento positivo(POS), negativo(NEG) y neutro(NEU) a cada una de las reseñas, para disponer de manera rápida de un número elevado de reseñas etiquetadas para el entrenamiento del modelo.
 
 ## 3. Nombre de las tareas
 
 3.1 Tratamiento de los datos 
-Los datos obtenidos se han procesado para eliminar el ruido. Se han eliminado correos electrónicos, nombres de usuario, emoticonos, puntuación, se han convertido en minúsculas y se han tokenizado mediante la librería NLTK, utilizando “Word_tokenize”. No se han filtrado las stopwords,  puesto que  son importantes para un proyecto de análisis de sentimiento.
+Los datos obtenidos se han procesado para eliminar el ruido. Se han eliminado correos electrónicos, nombres de usuario, emoticonos, puntuación, se han convertido en minúsculas y se han tokenizado mediante la librería "NLTK", utilizando “Word_tokenize”. No se han filtrado las stopwords,  puesto que  son importantes para un proyecto de análisis de sentimiento.
 
 
 
@@ -85,14 +85,14 @@ Realizado con el modelo “es_core_news_lg" de la librería Spacy, personalizado
 ## 3.4 Entrenamiento del modelo
 
 En este proceso se han seleccionado los modelos más destacados de la librería scikit-learn para un problema de clasificación single label.
--Regresión Logística  (Logistic Regression,LoR)
--Naive Bayes (Multinomial NB)
--Clasificador de Vectores de Soporte (Support Vector Classifier, SVC).
+-Regresión Logística  (*Logistic Regression*,LoR)
+-Naive Bayes (*Multinomial NB*)
+-Clasificador de Vectores de Soporte (*Support Vector Classifier*, SVC).
 -Clasificador de Vectores de Soporte con Kernel lineal ( LSVC ).
--Árboles de decisión (Decision Tree Classifier,DTC)
+-Árboles de decisión (*Decision Tree Classifier*,DTC)
 
 ## 3.5 Procesamiento de los datos
-En esta fase del proyecto se han seleccionado los textos para cada etiqueta y se han procesado con el modelo entrenado SVC. Esto ha dado una serie de resultados que se han graficado utilizando la librería matplotlib para su posterior análisis.
+En esta fase del proyecto se han seleccionado los textos para cada etiqueta y se han procesado con el modelo entrenado SVC. Esto ha dado una serie de resultados que se han graficado utilizando la librería *matplotlib* para su posterior análisis.
 
 
 ## 4. Perfiles profesionales necesarios
