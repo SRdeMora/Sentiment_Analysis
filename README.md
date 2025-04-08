@@ -31,7 +31,7 @@ Los datos obtenidos se han procesado para eliminar el ruido. Se han eliminado co
 ## 3.2 Definición de diccionario
 
 Recursos definidos:
-Para conseguir una lista de entidades adecuada al objetivo del proyecto se ha recurrido al marco semántico del mundo cinematográfico. Este marco nos presenta las palabras necesarias para el análisis de un objeto audiovisual. Para obtener un diccionario de entidades adecuado al propósito del proyecto se ha sometido  el conjunto de datos de un proceso de “bolsa de palabras” para determinar la relevancia de los términos más  utilizados y que sean más adecuados para la extracción de entidades.
+Para conseguir una lista de entidades adecuada al objetivo del proyecto se ha recurrido al marco semántico del mundo cinematográfico. Este marco nos presenta las palabras necesarias para el análisis de un objeto audiovisual. Para obtener un diccionario de entidades adecuado al propósito del proyecto se ha sometido  el conjunto de datos a un proceso de conteo de frecuencia léxica para determinar la relevancia de los términos más  utilizados y que sean más adecuados para la extracción de entidades.
 
 
 De acuerdo con los resultados obtenidos se ha elaborado el siguiente diccionario de entidades.
