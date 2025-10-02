@@ -1,110 +1,112 @@
-# Sentiment_Analysis
+<div align="center">
+  <h1 align="center">
+    📊 Análisis de Sentimiento de la Película "Gladiator 2"
+  </h1>
+  <p align="center">
+    <strong>Un proyecto NLP de extremo a extremo para extraer y clasificar la opinión pública sobre la película <em>Gladiator 2</em>, utilizando un corpus sintético y modelos de Machine Learning.</strong>
+  </p>
+</div>
 
-## 1. Descripción del escenario del proyecto
-El proyecto consiste en un análisis de datos, especializado en el sector audiovisual, de la película *Gladiator 2*. Para la realización del análisis se ha desarrollado  un  sistema de extracción de información y análisis de sentimientos de reseñas sobre la película.
-El objetivo es identificar las opiniones del público en relación con los siguientes aspectos:
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge&logo=spacy&logoColor=white" alt="spaCy">
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn">
+  <img src="https://img.shields.io/badge/NLTK-3776AB?style=for-the-badge" alt="NLTK">
+  <img src="https://img.shields.io/badge/Matplotlib-010101?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib">
+</p>
 
-- Opinión general sobre la película
-- Opinión sobre el guión
-- Opinión sobre los actores 
-- Opinión sobre la producción
+---
 
-Del conjunto de reseñas se extraerán las entidades relevantes que se clasificarán automáticamente según el sentimiento asociado.
+## 📜 Descripción del Proyecto
 
+Este proyecto presenta un sistema completo de **extracción de información y análisis de sentimientos** enfocado en el sector audiovisual, tomando como caso de estudio la película **Gladiator 2**.
 
-## 2. Corpus
+El objetivo es analizar un conjunto de reseñas para identificar y clasificar las opiniones del público en relación con los siguientes aspectos clave:
 
-El corpus de análisis se ha obtenido de forma sintética mediante prompt engineering, debido a que las API´s de las plataformas que facilitan las reseñas sobre películas, como *IMDB*, *FilmAffinity* o  *Rotten Tomatoes*,  son de pago y tampoco permiten el web scraping.
+-   🗣️ **Opinión general** sobre la película.
+-   ✍️ **Opinión sobre el guion** y la trama.
+-   🎭 **Opinión sobre los actores** y sus interpretaciones.
+-   🎬 **Opinión sobre la producción** (dirección, efectos, música, etc.).
 
-Prompt: “Actúa como un crítico especialista en cine. Accede a la página IMDB y analiza las reseñas asociadas a la película Gladiator II. Ahora ofréceme, en formato tabla, 40 reseñas inventadas por ti que reflejen de manera fiel el sentimiento de las reseñas analizadas.”
+A partir de las reseñas, se extraen entidades relevantes que se clasifican automáticamente según el sentimiento asociado (Positivo, Negativo o Neutro).
 
-En el corpus de análisis se ha añadido una columna llamada “Continent” que contiene las etiquetas de EEUU y EUROPA para evaluar las valoraciones de cada uno de los aspectos analizados en estos lugares.
-Esta misma técnica se ha utilizado para la creación del corpus de entrenamiento, sin embargo, se le ha pedido que analice diferentes películas entre las que se han incluido algunas con contenido histórico como *Troya* o *Centurión*, puesto que el análisis de películas históricas y épicas puede variar en relación a  películas de tipo contemporáneo. Además, se le ha pedido que asocie un sentimiento positivo(POS), negativo(NEG) y neutro(NEU) a cada una de las reseñas, para disponer de manera rápida de un número elevado de reseñas etiquetadas para el entrenamiento del modelo.
+---
 
-## 3. Nombre de las tareas
+## ⚙️ Metodología y Pipeline
 
-3.1 Tratamiento de los datos 
-Los datos obtenidos se han procesado para eliminar el ruido. Se han eliminado correos electrónicos, nombres de usuario, emoticonos, puntuación, se han convertido en minúsculas y se han tokenizado mediante la librería "NLTK", utilizando “Word_tokenize”. No se han filtrado las stopwords,  puesto que  son importantes para un proyecto de análisis de sentimiento.
+El proyecto se ha desarrollado siguiendo un pipeline de NLP bien definido:
 
+### 1. Creación del Corpus (Datos Sintéticos)
 
+Debido a las restricciones de las APIs de plataformas como *IMDB* o *FilmAffinity*, el corpus se ha generado de forma sintética mediante **Prompt Engineering**.
 
->[!NOTE]
->Definición del diccionario
-## 3.2 Definición de diccionario
+> **Prompt utilizado para generar datos de análisis:**
+> ```
+> “Actúa como un crítico especialista en cine. Accede a la página IMDB y analiza las reseñas asociadas a la película Gladiator II. Ahora ofréceme, en formato tabla, 40 reseñas inventadas por ti que reflejen de manera fiel el sentimiento de las reseñas analizadas.”
+> ```
 
-Recursos definidos:
-Para conseguir una lista de entidades adecuada al objetivo del proyecto se ha recurrido al marco semántico del mundo cinematográfico. Este marco nos presenta las palabras necesarias para el análisis de un objeto audiovisual. Para obtener un diccionario de entidades adecuado al propósito del proyecto se ha sometido  el conjunto de datos a un proceso de conteo de frecuencia léxica para determinar la relevancia de los términos más  utilizados y que sean más adecuados para la extracción de entidades.
+Se utilizó una técnica similar para el corpus de entrenamiento, pidiendo además la clasificación del sentimiento (POS, NEG, NEU) para agilizar el etiquetado de los datos.
 
+### 2. Preprocesamiento de Datos
 
-De acuerdo con los resultados obtenidos se ha elaborado el siguiente diccionario de entidades.
+Los datos se han limpiado para eliminar ruido, aplicando las siguientes técnicas:
+-   Eliminación de emails, nombres de usuario y emoticonos.
+-   Conversión a minúsculas.
+-   Tokenización de palabras con `word_tokenize` de **NLTK**.
+-   **No se han eliminado stopwords**, ya que son cruciales para el análisis de sentimiento.
 
--Entidad: Gladiator II
+### 3. Extracción de Entidades (NER)
 
--Variantes: secuela, continuación, película  
+Para la extracción de las entidades relevantes, se utilizó el modelo `es_core_news_lg` de **spaCy**, personalizado con un `EntityRuler` a partir de un diccionario definido a medida.
 
--Tipo semántico: PELÍCULA
+> [!NOTE]
+> **Definición del Diccionario de Entidades**
+> El diccionario se ha elaborado basándose en el marco semántico del mundo cinematográfico y la frecuencia léxica de los términos en el corpus.
+>
+> -   **Entidad: Gladiator II**
+>     -   **Variantes:** `secuela`, `continuación`, `película`
+>     -   **Tipo Semántico:** PELÍCULA | **Etiqueta:** `GENERAL`
+>
+> -   **Entidad: Paul Mescal, Pedro Pascal, Denzel Washington**
+>     -   **Tipo Semántico:** PERSONA | **Etiqueta:** `ACTOR`
+>
+> -   **Entidad: Producción**
+>     -   **Variantes:** `Ridley Scott`, `dirección`, `producción`, `visual`, `escenas`, `efectos especiales`, `coreografías`, `música`, `batallas`
+>     -   **Tipo Semántico:** OBJETO FÍLMICO | **Etiqueta:** `PRODUCCIÓN`
+>
+> -   **Entidad: Guion**
+>     -   **Variantes:** `trama`, `historia`, `narrativa`, `guión`, `personajes`, `desarrollo`
+>     -   **Tipo Semántico:** OBJETO ESCRITO | **Etiqueta:** `GUION`
 
--Etiqueta: GENERAL
+### 4. Entrenamiento del Modelo de Sentimiento
 
-Ejemplo: Como fanático de "Gladiator", esperaba mucho de esta secuela. Aunque tiene momentos épicos, la trama se siente un poco forzada. Hay secuencias bien logradas, pero el guion no tiene el mismo impacto emocional que la primera película. Paul Mescal ofrece una actuación convincente, pero no logra transmitir la misma carga emocional que Russell Crowe en la original. Es entretenida, pero no memorable.
-Salida esperada: esperaba mucho de esta secuela
+Para la clasificación de sentimientos, se evaluaron varios modelos de la librería **Scikit-learn**:
+-   Regresión Logística (`LogisticRegression`)
+-   Naive Bayes (`MultinomialNB`)
+-   Support Vector Classifier (`SVC`)
+-   Linear Support Vector Classifier (`LinearSVC`)
+-   Árboles de Decisión (`DecisionTreeClassifier`)
 
--Entidad: Paul Mescal, Pedro Pascal, Denzel Washington
+El modelo **SVC** fue finalmente seleccionado para el procesamiento final.
 
--Tipo semántico: PERSONA  
+### 5. Análisis y Visualización de Resultados
 
--Etiqueta: ACTOR  
+Los textos extraídos para cada etiqueta se procesaron con el modelo SVC entrenado. Los resultados se graficaron utilizando la librería **Matplotlib** para su posterior análisis e interpretación.
 
-Ejemplo: Como fanático de "Gladiator", esperaba mucho de esta secuela. Aunque tiene momentos épicos, la trama se siente un poco forzada. Hay secuencias bien logradas, pero el guion no tiene el mismo impacto emocional que la primera película. Paul Mescal ofrece una actuación convincente, pero no logra transmitir la misma carga emocional que Russell Crowe en la original. Es entretenida, pero no memorable.
-Salida esperada: Paul Mescal ofrece una actuación convincente
+---
 
--Entidad: Producción
+## 👥 Perfiles Profesionales Requeridos
 
--Variantes:Ridley Scott, dirección, producción, visual, escenas,  efectos especiales coreografías, música, batallas  
+Un proyecto de estas características requiere un equipo multidisciplinar:
+-   **Experto en PLN:** Para reconocer patrones, definir marcos semánticos y crear diccionarios de extracción.
+-   **Anotadores de Datos:** Para desarrollar corpus de entrenamiento rigurosos y exactos.
+-   **Científico de Datos:** Para el modelado, escalamiento, estandarización y evaluación de los modelos.
+-   **Analista de Datos:** Para la correcta interpretación de los resultados y la generación de insights.
+-   **Desarrollador de Software:** Para la implementación del sistema en una aplicación o página web.
 
--Tipo semántico: OBJETO FÍLMICO  
+---
 
--Etiqueta: PRODUCCIÓN  
+## 💡 Conclusiones y Aprendizajes
 
-Ejemplo: Como fanático de "Gladiator", esperaba mucho de esta secuela. Aunque tiene momentos épicos, la trama se siente un poco forzada. Hay secuencias bien logradas, pero el guion no tiene el mismo impacto emocional que la primera película. Paul Mescal ofrece una actuación convincente, pero no logra transmitir la misma carga emocional que Russell Crowe en la original. Es entretenida, pero no memorable.
-Salida esperada: Hay secuencias bien logradas
-
--Entidad: Guion  
-
--Variantes: trama, historia, narrativa, guión, personajes,desarrollo 
-
--Tipo semántico: OBJETO ESCRITO  
-
--Etiqueta: GUION  
-
-Ejemplo: Como fanático de "Gladiator", esperaba mucho de esta secuela. Aunque tiene momentos épicos, la trama se siente un poco forzada. Hay secuencias bien logradas, pero el guion no tiene el mismo impacto emocional que la primera película. Paul Mescal ofrece una actuación convincente, pero no logra transmitir la misma carga emocional que Russell Crowe en la original. Es entretenida, pero no memorable.
-Salida esperada: La trama se siente un poco forzada. El guion no tiene el mismo impacto emocional que la primera película.
-
-## 3.3 Extracción de entidades
-
-Realizado con el modelo “es_core_news_lg" de la librería Spacy, personalizado con EntityRuler.
-
-## 3.4 Entrenamiento del modelo
-
-En este proceso se han seleccionado los modelos más destacados de la librería scikit-learn para un problema de clasificación single label.
--Regresión Logística  (*Logistic Regression*,LoR)
--Naive Bayes (*Multinomial NB*)
--Clasificador de Vectores de Soporte (*Support Vector Classifier*, SVC).
--Clasificador de Vectores de Soporte con Kernel lineal ( LSVC ).
--Árboles de decisión (*Decision Tree Classifier*,DTC)
-
-## 3.5 Procesamiento de los datos
-En esta fase del proyecto se han seleccionado los textos para cada etiqueta y se han procesado con el modelo entrenado SVC. Esto ha dado una serie de resultados que se han graficado utilizando la librería *matplotlib* para su posterior análisis.
-
-
-## 4. Perfiles profesionales necesarios
-
-Para un proyecto de estas características es necesario contar con expertos en procesamiento del lenguaje natural que sepan reconocer patrones, los marcos semánticos necesarios para la actividad y para la definición de un diccionario que permita extraer la información de la manera más exacta posible. 
-Es necesario que existan anotadores para el desarrollar los corpus de entrenamiento de una manera rigurosa y exacta para evitar problemas en el modelado de los datos.
-Este modelado y su posterior evaluación deben llevarlo a cabo los científicos de datos que  realizan las tareas de escalamiento y estandarización de los datos, en caso de que fuese necesario;así como  la selección de características en problemas de regresión. 
-Por otra parte, sería necesaria la intervención de un analista de datos para la correcta interpretación de los datos obtenidos. 
-Dependiendo del destino de este proyecto podrían ser necesarios desarrolladores de software para su implementación en alguna página web o aplicación. 
-
-## 5. Conclusiones
-
-El mayor problema al que nos podemos enfrentar es encontrar los datos necesarios para el desarrollo del proyecto. Poseer datos estructurados es raro, puesto que la mayor parte de los datos en la web se encuentran de manera desestructurada. La inteligencia artificial puede ayudar en estos casos, pero las empresas son conscientes del valor que los datos han adquirido en los últimos tiempos y es difícil encontrar que los pongan a nuestra disposición de manera gratuita. Otro obstáculo al que nos podemos enfrentar es al de un nuevo lenguaje, el lenguaje de la programación y la cantidad de recursos y librerías útiles que existen y que pueden hacer que nos perdamos en un mar de recursos. Para que eso no suceda es imprescindible centrarse en las librerías y recursos necesarios para el desarrollo del trabajo y, si fuese necesario, ampliar los conocimientos progresivamente.
+-   **El Reto de los Datos:** El principal obstáculo es la adquisición de datos estructurados y de calidad. La IA y el prompt engineering son una alternativa viable, pero el acceso a datos reales sigue siendo un desafío.
+-   **El Ecosistema de Herramientas:** Es crucial centrarse en las librerías y recursos necesarios para un objetivo concreto (como NLTK, spaCy y Scikit-learn en este caso) para no perderse en el vasto mar de herramientas disponibles y ampliar conocimientos de forma progresiva.
