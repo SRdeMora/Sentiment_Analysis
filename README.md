@@ -102,11 +102,4 @@ Un proyecto de estas características requiere un equipo multidisciplinar:
 -   **Anotadores de Datos:** Para desarrollar corpus de entrenamiento rigurosos y exactos.
 -   **Científico de Datos:** Para el modelado, escalamiento, estandarización y evaluación de los modelos.
 -   **Analista de Datos:** Para la correcta interpretación de los resultados y la generación de insights.
--   **Desarrollador de Software:** Para la implementación del sistema en una aplicación o página web.
 
----
-
-## 💡 Conclusiones y Aprendizajes
-
--   **El Reto de los Datos:** El principal obstáculo es la adquisición de datos estructurados y de calidad. La IA y el prompt engineering son una alternativa viable, pero el acceso a datos reales sigue siendo un desafío.
--   **El Ecosistema de Herramientas:** Es crucial centrarse en las librerías y recursos necesarios para un objetivo concreto (como NLTK, spaCy y Scikit-learn en este caso) para no perderse en el vasto mar de herramientas disponibles y ampliar conocimientos de forma progresiva.
