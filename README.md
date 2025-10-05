@@ -1,6 +1,6 @@
 <div align="center">
   <h1 align="center">
-    📊 Análisis de Sentimiento de la Película "Gladiator 2"
+    📊 Pipeline NLP End-to-End para la Deconstrucción de Opiniones y Análisis de Sentimiento por Aspectos.
   </h1>
   <p align="center">
     <strong>Un proyecto NLP de extremo a extremo para extraer y clasificar la opinión pública sobre la película <em>Gladiator 2</em>, utilizando un corpus sintético y modelos de Machine Learning.</strong>
