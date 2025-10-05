@@ -95,11 +95,4 @@ Los textos extraídos para cada etiqueta se procesaron con el modelo SVC entrena
 
 ---
 
-## 👥 Perfiles Profesionales Requeridos
-
-Un proyecto de estas características requiere un equipo multidisciplinar:
--   **Experto en PLN:** Para reconocer patrones, definir marcos semánticos y crear diccionarios de extracción.
--   **Anotadores de Datos:** Para desarrollar corpus de entrenamiento rigurosos y exactos.
--   **Científico de Datos:** Para el modelado, escalamiento, estandarización y evaluación de los modelos.
--   **Analista de Datos:** Para la correcta interpretación de los resultados y la generación de insights.
 
